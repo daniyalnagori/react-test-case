@@ -15,3 +15,9 @@ test('text case', () => {
   const linkElement = getByText(/Hello Piaic/i);
   expect(linkElement).toBeInTheDocument();
 });
+
+test('text case', () => {
+  const { getByText } = render(<App />);
+  const linkElement = getByText(/Hello Sir/i);
+  expect(linkElement).toBeInTheDocument();
+});
